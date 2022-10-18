@@ -373,14 +373,14 @@ public class TelaProduto extends javax.swing.JFrame {
     }//GEN-LAST:event_txtQuantProdActionPerformed
 
     private void txtNomeProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeProdutoActionPerformed
-       
-       
+
+
     }//GEN-LAST:event_txtNomeProdutoActionPerformed
 
     private void txtNomeProdutoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNomeProdutoKeyTyped
-        if(txtNomeProduto.getText().length()>=20){
-           evt.consume();
-           JOptionPane.showMessageDialog(this,"Máximo de 20 caracteres atingido!");
+        if (txtNomeProduto.getText().length() >= 20) {
+            evt.consume();
+            JOptionPane.showMessageDialog(this, "Máximo de 20 caracteres atingido!");
         }
     }//GEN-LAST:event_txtNomeProdutoKeyTyped
 
@@ -390,36 +390,36 @@ public class TelaProduto extends javax.swing.JFrame {
 
     private void txtCodigoProdutoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCodigoProdutoKeyTyped
         char c = evt.getKeyChar();
-        
-        if (((c<'0') || (c>'9')) && (c !=KeyEvent.VK_BACK_SPACE)){
+
+        if (((c < '0') || (c > '9')) && (c != KeyEvent.VK_BACK_SPACE)) {
             evt.consume();
-            JOptionPane.showMessageDialog(this,"Somente números no Código do produto");
+            JOptionPane.showMessageDialog(this, "Somente números no Código do produto");
 //            this.txtCodigoProduto.setText("Somente números no Código do produto");
         }
-        
-        if(txtCodigoProduto.getText().length()>=2){
+
+        if (txtCodigoProduto.getText().length() >= 2) {
             evt.consume();
-            JOptionPane.showMessageDialog(this,"Digite um número menor que 100!");
+            JOptionPane.showMessageDialog(this, "Digite um número menor que 100!");
         }
     }//GEN-LAST:event_txtCodigoProdutoKeyTyped
 
     private void txtMarcaProdutoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMarcaProdutoKeyTyped
-        if(txtMarcaProduto.getText().length()>=20){
-           evt.consume();
-           JOptionPane.showMessageDialog(this,"Máximo de 20 caracteres atingido!");
+        if (txtMarcaProduto.getText().length() >= 20) {
+            evt.consume();
+            JOptionPane.showMessageDialog(this, "Máximo de 20 caracteres atingido!");
         }
     }//GEN-LAST:event_txtMarcaProdutoKeyTyped
 
     private void txtDescricaoProdutoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescricaoProdutoKeyTyped
-        if(txtDescricaoProduto.getText().length()>=50){
-           evt.consume();
-           JOptionPane.showMessageDialog(this,"Máximo de 50 caracteres atingido!");
+        if (txtDescricaoProduto.getText().length() >= 50) {
+            evt.consume();
+            JOptionPane.showMessageDialog(this, "Máximo de 50 caracteres atingido!");
         }
     }//GEN-LAST:event_txtDescricaoProdutoKeyTyped
 
     private void txtFornecedorProdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFornecedorProdKeyTyped
-              
-        if(txtFornecedorProd.getText().length()>=10){
+
+        if (txtFornecedorProd.getText().length() >= 10) {
             evt.consume();
             JOptionPane.showMessageDialog(this, "Máximo de 10 caracteres atingido!");
         }
@@ -427,15 +427,15 @@ public class TelaProduto extends javax.swing.JFrame {
 
     private void txtQuantProdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtQuantProdKeyTyped
         char c = evt.getKeyChar();
-        
-        if (((c<'0') || (c>'9')) && (c !=KeyEvent.VK_BACK_SPACE)){
+
+        if (((c < '0') || (c > '9')) && (c != KeyEvent.VK_BACK_SPACE)) {
             evt.consume();
-            JOptionPane.showMessageDialog(this,"Somente números no campo Quantidade do produto");
+            JOptionPane.showMessageDialog(this, "Somente números no campo Quantidade do produto");
         }
-        if(txtQuantProd.getText().length()>=2){
+        if (txtQuantProd.getText().length() >= 2) {
             evt.consume();
-            JOptionPane.showMessageDialog(this,"Digite um número menor que 100!");
-            
+            JOptionPane.showMessageDialog(this, "Digite um número menor que 100!");
+
         }
     }//GEN-LAST:event_txtQuantProdKeyTyped
 
